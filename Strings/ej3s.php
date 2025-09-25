@@ -44,7 +44,8 @@
         $rango1 = bindec(substr($rango1_bin, 0, 8)).".".bindec(substr($rango1_bin, 8, 8)).".".bindec(substr($rango1_bin, 16, 8)).".".bindec(substr($rango1_bin, 24, 8));
         $rango2 = bindec(substr($rango2_bin, 0, 8)).".".bindec(substr($rango2_bin, 8, 8)).".".bindec(substr($rango2_bin, 16, 8)).".".bindec(substr($rango2_bin, 24, 8));
 
-
+        
+        echo "IP: $ip</br>";
         echo "Máscara: $masc</br>";
         echo "Dirección de red: $red</br>";
         echo "Dirección de broadcast: $broad</br>";
@@ -94,6 +95,7 @@
         $rango1 = bin2ip(substr_replace(str_pad(substr(ip2bin($ip), 0, $masc), 32, "0", STR_PAD_RIGHT), "1", 31, 1));
         $rango2 = bin2ip(substr_replace(str_pad(substr(ip2bin($ip), 0, $masc), 32, "1", STR_PAD_RIGHT), "0", 31, 1));
 
+        echo "IP: $ip</br>";
         echo "Máscara: $masc</br>";
         echo "Dirección de red: $red</br>";
         echo "Dirección de broadcast: $broad</br>";
