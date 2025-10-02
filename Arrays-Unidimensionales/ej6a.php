@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>EJ5A – Invertir arrays unidos y eliminar elemento</title>
+        <title>EJ6A – Invertir arrays unidos y eliminar elemento</title>
     </head>
     <body>
         <?php
