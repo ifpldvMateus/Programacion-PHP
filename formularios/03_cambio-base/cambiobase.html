@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conversor numérico</title>
+        <style>
+            form {
+                max-width: 300px;
+                margin: auto;
+                text-align: left;
+            }
+
+            label, input[type="number"] {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .radio input[type="radio"] {
+                margin-right: 5px;
+            }
+
+            .radio label {
+                display: flex;
+                align-items: center;
+                margin: 2px 0;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <h1>CONVERSOR NUMÉRICO</h1>
+
+        <form action="cambiobase.php" method="post">
+            <label for="numero">Número decimal: </label>
+            <input type="number" id="numero" name="numero">
+
+            <label>Convertir a:</label>
+            <div class="radio">
+                <label><input type="radio" name="sistema" value="Binario">Binario</label>
+                <label><input type="radio" name="sistema" value="Octal">Octal</label>
+                <label><input type="radio" name="sistema" value="Hexadecimal">Hexadecimal</label>
+                <label><input type="radio" name="sistema" value="Todos"> Todos los anteriores</label>
+            </div>
+
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Borrar">
+        </form>
+
+    </body>
+</html>
